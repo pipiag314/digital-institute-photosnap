@@ -213,7 +213,6 @@ img {
   }
 }
 
-
 /* READ STORY SECTION */
 
 .read-story-section {
@@ -286,7 +285,6 @@ img {
   }
 }
 
-
 /* FEATURE SECTION */
 
 .features-section {
@@ -315,7 +313,7 @@ img {
 @media only screen and (min-width: 600px) {
   .features-section {
     padding: 120px 156px;
-    gap: 80px
+    gap: 80px;
   }
 }
 
@@ -325,4 +323,28 @@ img {
     gap: 30px;
     padding: 120px 165px;
   }
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 56px 32px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-link-img {
+  filter: brightness(0) invert(1);
 }
