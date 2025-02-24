@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "DM sans", sans-serif;
 }
 
 * {
@@ -45,8 +46,30 @@ img {
 .nav {
   display: none;
 }
+
+.nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.62px;
+  letter-spacing: 2px;
+}
+
+
+
 .get-invite-header-btn {
+  font-family: "DM sans";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.62px;
+  letter-spacing: 2px;
   display: none;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
 }
 
 .img-for-tablet-craete-and-share {
@@ -65,7 +88,8 @@ img {
     display: none;
   }
   .nav {
-    display: block;
+    display: flex;
+    gap: 37px;
   }
   .get-invite-header-btn {
     display: block;
@@ -113,11 +137,32 @@ img {
   position: relative;
 }
 
+.hero-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 3.33px;
+}
+
+.hero-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
 .get-invite-btn {
   border: none;
   background-color: transparent;
   color: #fff;
   margin-top: 20px;
+}
+
+.button-text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.62px;
+  letter-spacing: 2px;
 }
 
 .get-invite-btn img {
@@ -156,11 +201,16 @@ img {
     height: 304px;
     background: linear-gradient(to bottom, #ffc593, #bc7198, #5a77ff);
   }
+  /* .hero-title { */
+  /* font-size: 38px; */
+  /* line-height: 48px; */
+  /* letter-spacing: 4.17px; */
+  /* } */
 }
 
 @media only screen and (min-width: 1200px) {
   .hero-section-1-text {
-    padding: 140px 112px;
+    padding: 140px 70px;
   }
 }
 
@@ -199,7 +249,6 @@ img {
   }
 
   .hero-section-2-text {
-    /* padding: 140px 112px; */
     display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -209,7 +258,7 @@ img {
 
 @media only screen and (min-width: 1200px) {
   .hero-section-2-text {
-    padding: 140px 112px;
+    padding: 140px 70px;
   }
 }
 
@@ -331,9 +380,6 @@ img {
   background-color: #000000;
   color: #fff;
   padding: 56px 32px;
-}
-
-.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -345,6 +391,147 @@ img {
   gap: 20px;
 }
 
-.footer-link-img {
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 15.62px;
+}
+
+.footer-socials-img {
   filter: brightness(0) invert(1);
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 13px;
+}
+
+.socials-and-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-container {
+  margin-top: 120px;
+}
+
+@media only screen and (min-width: 600px) {
+  .socials-and-nav {
+    flex-direction: column-reverse;
+    gap: 70px;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-left {
+    align-items: flex-start;
+    height: 200px;
+  }
+
+  .footer-right {
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 200px;
+    /* gap: 80px; */
+  }
+
+  .btn-container {
+    margin-top: 0;
+    justify-self: flex-start;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .socials-and-nav {
+    flex-direction: row;
+  }
+
+  .footer-left {
+    justify-content: space-between;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    justify-self: flex-start;
+  }
+
+  .footer-socials {
+    align-self: flex-end;
+  }
+}
+
+
+
+/* MOBILE MENU */
+
+.mobile-menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  /* height: 200px; */
+  background-color: #ffffff;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 32px;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: 2.5px;
+}
+
+.line {
+  height: 1px;
+  width: 310px;
+  background-color: gray;
+}
+
+.get-invite-mobile-btn {
+  font-family: "DM sans";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.62px;
+  letter-spacing: 2px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
 }
